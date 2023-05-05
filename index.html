@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-3.6.4.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="icon" href="img/logo.jpg">
+  <title>Political Meter</title>
+</head>
+
+<body>
+  <nav>
+    <img src="/img/logo.jpg" alt="Logo">
+    <ul>
+      <li><a href="/home.html">Home</a></li>
+      <li><a href="/landing.html">About</a></li>
+      <li>
+        <a href="/index.html">Political Meter</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <form id="political-form" class="was-validated">
+      <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Full Name:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter your full name" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="govt-size" class="form-label">If you had a government would you rather....</label>
+        <select name="govt-size" class="form-control" id="govt-size" required>
+          <option value="">Select an Option</option>
+          <option value="smaller">A smaller government providing fewer services</option>
+          <option value="bigger">A bigger government providing more services</option>
+        </select>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label for="govt-service" class="form-label">when you say you favour a bigger government providing more services
+          whould you rather</label>
+        <select name="govt-service" class="form-control" id="govt-service" required>
+          <option value="">Select an Option</option>
+          <option value="modestly">Modestly expand on current government services</option>
+          <option value="greatly">Greatly expand on current government services</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="view" class="form-label">Which of the following statements come closest to your view?</label>
+        <select name="view" class="form-control" id="view" required>
+          <option value="">Select an Option</option>
+          <option value="open">America's openess to people from all over the world is essential to who we are as a
+            nation</option>
+          <option value="tooOpen">America is too open to people from all over the world, we risk losing our identy as a
+            nation</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="expert" class="form-label">In general, would you say experts who study a subject for many years
+          are...</label>
+        <select name="expert" class="form-control" id="expert" required>
+          <option value="">Select an Option</option>
+          <option value="better">Usually better at making good policy decisions about the subject than other people
+          </option>
+          <option value="worse">Usually worse at making good policy decisions about the subject than other people
+          </option>
+          <option value="neutral">neither better nor worse at making good policy decisions about the subject than other
+            people</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="trade" class="form-label">Thinking about increased trade of goods and services between the U.S. and
+          other nations in recent decades, would you say that the U.S. has...</label>
+        <select name="trade" class="form-control" id="trade" required>
+          <option value="">Select an Option</option>
+          <option value="gain">gained more than it has lost because increased trade of goods has helped lower prices and
+            has increased the competitiveness of some U.S. business</option>
+          <option value="lost">lost more than it has gained because increased trade of has cost jobs in manufacturing &
+            other industries and lowered wages for some U.S. citizens</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="race" class="form-label">How much more, if anything, needs to be done to ensure equal rights for all Americans regardless of their racial or ethnic backgrounds?</label>
+        <select name="race" class="form-control" id="race" required>
+          <option value="">Select an Option</option>
+          <option value="alot">A lot</option>
+          <option value="little">A little</option>
+          <option value="nothing">Nothing</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="profit" class="form-label">Which of the following statements comes closest to your view?</label>
+        <select name="profit" class="form-control" id="profit" required>
+          <option value="">Select an Option</option>
+          <option value="unreasonable">Business Corporations make too much profit</option>
+          <option value="reasonable">Most Corporations make a fair and reasonable amount of profit</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="religion" class="form-label">Which of the following statements comes closest to your view?</label>
+        <select name="religion" class="form-control" id="religion" required>
+          <option value="">Select an Option</option>
+          <option value="seperate">Religion should be kept seperate from government policies</option>
+          <option value="support">Government policies should support religious value & belief</option>
+        </select>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+        <label class="form-check-label" for="myCheck">I agree on the terms & conditions.</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <div class="footer">
+    <p>Political Meter | Address | 07043741067 | kehindeoloruntayo1@gmail.com</p>
+  </div>
+</body>
+
+</html>
