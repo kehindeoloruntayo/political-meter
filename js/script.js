@@ -20,13 +20,13 @@ $(document).ready(function () {
     }
 
     if (politicalBelief === 'Conservative') {
-      window.location.href = 'conservative.html';
+      window.location.href = './conservative.html';
     } else if (politicalBelief === 'Moderate') {
-      window.location.href = 'moderate.html';
+      window.location.href = './moderate.html';
     } else if (politicalBelief === 'Liberal') {
-      window.location.href = 'liberal.html';
+      window.location.href = './liberal.html';
     } else {
-      window.location.href = 'moderate.html';
+      window.location.href = './moderate.html';
     }
   });
 });
